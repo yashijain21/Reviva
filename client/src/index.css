@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Cormorant+Garamond:wght@500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --cream: #faf8f5;
+  --cream-soft: #f7f2eb;
+  --surface: rgba(255, 255, 255, 0.72);
+  --border: rgba(87, 61, 16, 0.12);
+  --border-strong: rgba(87, 61, 16, 0.24);
+  --ink: #372a20;
+  --ink-strong: #1d1511;
+  --muted-ink: #66594e;
+  --muted: #837059;
+  --olive: #275e40;
+  --olive-soft: rgba(39, 94, 64, 0.18);
+  --gold: #f8c830;
+  --gold-soft: rgba(248, 200, 48, 0.24);
+  --peru: #b68340;
+  --peru-soft: rgba(182, 131, 64, 0.2);
+  font-family: 'Manrope', 'Trebuchet MS', sans-serif;
+  color: var(--ink);
+  background: var(--cream);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background:
+    radial-gradient(circle at top left, rgba(248, 200, 48, 0.08), transparent 26%),
+    radial-gradient(circle at top right, rgba(39, 94, 64, 0.08), transparent 24%),
+    linear-gradient(180deg, #faf8f5 0%, #f2eadf 100%);
+}
+
+body,
+button,
+a {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+button,
+a {
+  font-family: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+
+.font-display {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+}
+
+::selection {
+  background: rgba(248, 200, 48, 0.35);
+  color: #1d1511;
+}
